@@ -35,6 +35,7 @@ import static java.util.Arrays.asList;
      RadioGroup radioGroup; //Contains Options
      List<RadioButton> options; //Contains the list of radio buttons
      String correctOption; //Contains the correct answer of current MCQ
+     int toggle = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +83,8 @@ import static java.util.Arrays.asList;
 
     private void showNextMCQ()
     {
-        if (current_MCQ < totalMCQs) {
+        if (current_MCQ < totalMCQs)
+        {
             int j = 0;
             List<String> MCQ = arrayList.get(current_MCQ);
             question_No.setText(String.valueOf(current_MCQ + 1));
@@ -92,14 +94,13 @@ import static java.util.Arrays.asList;
 
             for (Iterator<RadioButton> i = options.iterator(); i.hasNext(); ) {
                 RadioButton rb = i.next();
+                rb.setBackgroundColor(Color.TRANSPARENT);
+                rb.setEnabled(true);
                 rb.setText(MCQ.get(randomList.get(j)));
                 j++;
             }
 
             current_MCQ++;
-
-            if (current_MCQ == totalMCQs)
-                nextButton.setText("SUBMIT");
         }
         else
         {
@@ -112,31 +113,54 @@ import static java.util.Arrays.asList;
         }
     }
 
-     public void nextMCQ(View view)
-     {
-         int id = radioGroup.getCheckedRadioButtonId();
-         RadioButton rb = findViewById(id);
-         RadioButton rb1 = null;
+    public void nextMCQ(View view)
+    {
+        if (1 - toggle  == 1)
+        {
+            int id = radioGroup.getCheckedRadioButtonId();
+            RadioButton rb = findViewById(id);
+            RadioButton rb1 = null;
 
-         if (rb.getText().toString().equals(correctOption))
-         {
-             rb.setBackgroundColor(Color.GREEN);
-             score++;
-         }
-         else
-         {
-             rb.setBackgroundColor(Color.RED);
+            if (rb.getText().toString().equals(correctOption))
+            {
+                rb.setBackgroundColor(Color.GREEN);
+                score++;
+            }
+            else
+            {
+                rb.setBackgroundColor(Color.RED);
 
-             for (Iterator<RadioButton> i = options.iterator(); i.hasNext();)
-             {
-                 rb1 = i.next();
-                 if(rb1.getText().toString().equals(correctOption))
-                 {
-                     rb1.setBackgroundColor(Color.GREEN);
-                     break;
-                 }
-             }
-         }
-         showNextMCQ();
-     }
+                for (Iterator<RadioButton> i = options.iterator(); i.hasNext();)
+                {
+                    rb1 = i.next();
+                    if(rb1.getText().toString().equals(correctOption))
+                    {
+                        rb1.setBackgroundColor(Color.GREEN);
+                        break;
+                    }
+                }
+            }
+
+            for (Iterator<RadioButton> i = options.iterator(); i.hasNext();)
+            {
+                RadioButton rb2 = i.next();
+                rb2.setEnabled(false);
+            }
+
+            toggle = 1- toggle;
+
+            if (current_MCQ == totalMCQs)
+                nextButton.setText("SUBMIT");
+            else
+                nextButton.setText("NEXT");
+        }
+        else
+        {
+            toggle = 1- toggle;
+
+            if (current_MCQ != totalMCQs)
+                nextButton.setText("VIEW ANSWER");
+            showNextMCQ();
+        }
+    }
  }

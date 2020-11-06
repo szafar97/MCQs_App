@@ -31,9 +31,9 @@
     <TextView
         android:id="@+id/question"
         android:layout_width="361dp"
-        android:layout_height="53dp"
+        android:layout_height="80dp"
         android:layout_marginTop="52dp"
-        android:textSize="18sp"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,32 +42,37 @@
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="360dp"
-        android:layout_height="304dp"
-        android:layout_marginTop="56dp"
+        android:layout_height="330dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question">
 
         <RadioButton
             android:id="@+id/rb1"
             android:layout_width="match_parent"
-            android:layout_height="74dp"
-            android:checked="true" />
+            android:layout_height="80dp"
+            android:checked="true"
+            android:textSize="22sp" />
 
         <RadioButton
             android:id="@+id/rb2"
             android:layout_width="match_parent"
-            android:layout_height="74dp" />
+            android:layout_height="80dp"
+            android:textSize="22sp" />
 
         <RadioButton
             android:id="@+id/rb3"
             android:layout_width="match_parent"
-            android:layout_height="74dp" />
+            android:layout_height="80dp"
+            android:textSize="22sp" />
 
         <RadioButton
             android:id="@+id/rb4"
             android:layout_width="match_parent"
-            android:layout_height="74dp" />
+            android:layout_height="80dp"
+            android:textSize="22sp" />
     </RadioGroup>
 
     <Button
@@ -77,9 +82,11 @@
         android:layout_marginTop="44dp"
         android:onClick="nextMCQ"
         android:text="@string/next"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
