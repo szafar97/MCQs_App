@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">MCQs_App</string>
+    <string name="app_title">JAVA MCQs</string>
+    <string name="start_button">Start Quiz</string>
+    <string name="author_info">Created By:\nName: Shoaib Zafar\nRoll No: BITF17A531</string>
 </resources>

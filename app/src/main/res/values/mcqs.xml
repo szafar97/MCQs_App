@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mcq0">
+        <item>Which of the following option leads to the portability and security of Java?</item>
+        <item>Bytecode is executed by JVM</item>
+        <item>The applet makes the Java code secure and portable</item>
+        <item>Use of exception handling</item>
+        <item>Dynamic binding between objects</item>
+    </string-array>
+    <string-array name="mcq1">
+        <item>Which of the following is not a Java features?</item>
+        <item>Use of pointers</item>
+        <item>Dynamic</item>
+        <item>Architecture Neutral</item>
+        <item>Object-oriented</item>
+    </string-array>
+    <string-array name="mcq2">
+        <item>The \u0021 article referred to as a ___</item>
+        <item>Unicode escape sequence</item>
+        <item>Octal escape</item>
+        <item>Hexadecimal</item>
+        <item>Line feed</item>
+    </string-array>
+    <string-array name="mcq3">
+        <item>___ is used to find and fix bugs in the Java programs.</item>
+        <item>JDB</item>
+        <item>JVM</item>
+        <item>JRE</item>
+        <item>JDK</item>
+    </string-array>
+    <string-array name="mcq4">
+        <item>Which of the following is a valid declaration of a char?</item>
+        <item>char ch = \'\\utea\';</item>
+        <item>char ca = \'tea\';</item>
+        <item>char cr = \\u0223\\;</item>
+        <item>char cc = \'\\itea\';</item>
+    </string-array>
+    <string-array name="mcq5">
+        <item>What is the return type of the hashCode() method in the Object class?</item>
+        <item>int</item>
+        <item>Object</item>
+        <item>long</item>
+        <item>void</item>
+    </string-array>
+    <string-array name="mcq6">
+        <item>Which of the following is a valid long literal?</item>
+        <item>0xnf029L</item>
+        <item>ABH8097</item>
+        <item>L990023</item>
+        <item>904423</item>
+    </string-array>
+    <string-array name="mcq7">
+        <item>What does the expression float a = 35 / 0 return?</item>
+        <item>Infinity</item>
+        <item>0</item>
+        <item>Not a Number</item>
+        <item>Run time exception</item>
+    </string-array>
+    <string-array name="mcq8">
+        <item>Evaluate the following Java expression, if x=3, y=5, and z=10:\n++z + y - y + z + x++</item>
+        <item>24</item>
+        <item>23</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+    <string-array name="mcq9">
+        <item>Which of the following tool is used to generate API documentation in HTML format from doc comments in source code?</item>
+        <item>Javadoc tool</item>
+        <item>javap tool</item>
+        <item>javaw command</item>
+        <item>javah command</item>
+    </string-array>
+    <string-array name="mcq10">
+        <item>Which of the following creates a List of 3 visible items and multiple selections abled?</item>
+        <item>new List(3, true)</item>
+        <item>new List(false, 3)</item>
+        <item>new List(true, 3)</item>
+        <item>new List(3, false)</item>
+    </string-array>
+    <string-array name="mcq11">
+        <item>Which of the following for loop declaration is not valid?</item>
+        <item>for ( int i = 99; i >= 0; i / 9 )</item>
+        <item>for ( int i = 7; i &lt;= 77; i += 7 )</item>
+        <item>for ( int i = 20; i &gt;= 2; --i )</item>
+        <item>for ( int i = 2; i &lt;= 20; i = 2 * i )</item>
+    </string-array>
+    <string-array name="mcq12">
+        <item>Which method of the Class.class is used to determine the name of a class represented by the class object as a String?</item>
+        <item>getName()</item>
+        <item>getClass()</item>
+        <item>intern()</item>
+        <item>toString()</item>
+    </string-array>
+    <string-array name="mcq13">
+        <item>In which process, a local variable has the same name as one of the instance variables?</item>
+        <item>Variable Shadowing</item>
+        <item>Serialization</item>
+        <item>Abstraction</item>
+        <item>Multi-threading</item>
+    </string-array>
+    <string-array name="mcq14">
+        <item>Which of the following is true about the anonymous inner class?</item>
+        <item>It has no class name</item>
+        <item>It has only methods</item>
+        <item>Objects can\'t be created</item>
+        <item>It has a fixed class name</item>
+    </string-array>
+    <string-array name="mcq15">
+        <item>Which package contains the Random class?</item>
+        <item>java.util package</item>
+        <item>java.lang package</item>
+        <item>java.awt package</item>
+        <item>java.io package</item>
+    </string-array>
+    <string-array name="mcq16">
+        <item>What do you mean by nameless objects?</item>
+        <item>An object that has no reference.</item>
+        <item>An object created by using the new keyword.</item>
+        <item>An object of a superclass created in the subclass.</item>
+        <item>An object without having any name but having a reference.</item>
+    </string-array>
+    <string-array name="mcq17">
+        <item>An interface with no fields or methods is known as a ______.</item>
+        <item>Marker Interface</item>
+        <item>Runnable Interface</item>
+        <item>Abstract Interface</item>
+        <item>CharSequence Interface</item>
+    </string-array>
+    <string-array name="mcq18">
+        <item>Which of the following is an immediate subclass of the Panel class?</item>
+        <item>Applet class</item>
+        <item>Window class</item>
+        <item>Frame class</item>
+        <item>Dialog class</item>
+    </string-array>
+    <string-array name="mcq19">
+        <item>Which option is false about the final keyword?</item>
+        <item>A final class cannot extend other classes.</item>
+        <item>A final method cannot be overridden in its subclasses.</item>
+        <item>A final class cannot be extended.</item>
+        <item>A final method can be inherited.</item>
+    </string-array>
+    <string-array name="mcq20">
+        <item>Which of these classes are the direct subclasses of the Throwable class?</item>
+        <item>Error and Exception class</item>
+        <item>RuntimeException and Error class</item>
+        <item>Exception and VirtualMachineError class</item>
+        <item>IOException and VirtualMachineError class</item>
+    </string-array>
+    <string-array name="mcq21">
+        <item>What do you mean by chained exceptions in Java?</item>
+        <item>An exception caused by other exceptions</item>
+        <item>Exceptions occurred by the VirtualMachineError</item>
+        <item>Exceptions occur in chains with discarding the debugging information</item>
+        <item>None of the above</item>
+    </string-array>
+    <string-array name="mcq22">
+        <item>In which memory a String is stored, when we create a string using new operator?</item>
+        <item>Heap memory</item>
+        <item>Stack</item>
+        <item>String memory</item>
+        <item>Random storage space</item>
+    </string-array>
+    <string-array name="mcq23">
+        <item>What is the use of the intern() method?</item>
+        <item>It returns the existing string from memory</item>
+        <item>It creates a new string in the database</item>
+        <item>It modifies the existing string in the database</item>
+        <item>None of the above</item>
+    </string-array>
+    <string-array name="mcq24">
+        <item>Which of the following is a marker interface?</item>
+        <item>Remote interface</item>
+        <item>Runnable interface</item>
+        <item>Readable interface</item>
+        <item>Result interface</item>
+    </string-array>
+    <string-array name="mcq25">
+        <item>Which of the following is a reserved keyword in Java?</item>
+        <item>strictfp</item>
+        <item>object</item>
+        <item>main</item>
+        <item>system</item>
+    </string-array>
+    <string-array name="mcq26">
+        <item>Which of the following is false?</item>
+        <item>It is an optional jar file</item>
+        <item>The rt.jar stands for the runtime jar</item>
+        <item>It contains all the compiled class files</item>
+        <item>All the classes available in rt.jar is known to the JVM</item>
+    </string-array>
+    <string-array name="mcq27">
+        <item>Which keyword is used for accessing the features of a package?</item>
+        <item>import</item>
+        <item>package</item>
+        <item>extends</item>
+        <item>export</item>
+    </string-array>
+    <string-array name="mcq28">
+        <item>In java, jar stands for_____.</item>
+        <item>None of the above</item>
+        <item>Java Archive Runner</item>
+        <item>Java Application Resource</item>
+        <item>Java Application Runner</item>
+    </string-array>
+    <string-array name="mcq29">
+        <item>What is the use of \w in regex?</item>
+        <item>Used for a word character</item>
+        <item>Used for a whitespace character</item>
+        <item>Used for a non-whitespace character</item>
+        <item>Used for a non-word character</item>
+    </string-array>
+    <string-array name="mcq30">
+        <item>Which of the given methods are of Object class?</item>
+        <item>notify(), notifyAll(), and wait()</item>
+        <item>notify(), wait( long msecs ), and synchronized()</item>
+        <item>wait( long msecs ), interrupt(), and notifyAll()</item>
+        <item>sleep( long msecs ), wait(), and notify()</item>
+    </string-array>
+</resources>
