@@ -3,4 +3,8 @@
     <string name="app_title">JAVA MCQs</string>
     <string name="start_button">Start Quiz</string>
     <string name="author_info">Created By:\nName: Shoaib Zafar\nRoll No: BITF17A531</string>
+    <string name="question_no">Question No:</string>
+    <string name="next">Next</string>
+    <string name="your_score_is">Your score is:</string>
+    <string name="restart">RESTART</string>
 </resources>
