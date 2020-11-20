@@ -26,7 +26,7 @@ import static java.util.Arrays.asList;
      ArrayList<List<String>> arrayList; //It will contain MCQs along with their options
      int current_MCQ; //Store the number of current ongoing MCQ
      final int maxMCQNo = 30; //Highest MCQ number in XML file
-     final int totalMCQs = 10; //Total MCQs in a single quiz
+     final int totalMCQs = 5; //Total MCQs in a single quiz
      List<Integer> randomList; //Will contain random numbers for randomization of options
      int score; //It will count the score (number of correctly attempted MCQs)
      TextView question_No; //To display quesion number
@@ -73,11 +73,6 @@ import static java.util.Arrays.asList;
         }
 
         Collections.shuffle(arrayList); //It will shuffle the MCQs randomly
-        List<String> MCQ;
-        String correctOption = "";
-        score = 0; //Initializing score with 0
-        current_MCQ = 0; //Initializing current MCQ number to 0
-
         showNextMCQ();
     }
 
